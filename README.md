@@ -44,7 +44,7 @@ speedUpMyMac -a
 
 # General Notes:
 
-- Use `speedUpMyMac auto` to do all steps (except emptying trash) in one step.
+- Use `speedUpMyMac -a` to do all steps (except emptying trash) in one step.
 - All wrap-over scripts that move files to trash, move it to `~/Documents/DeskDrawer/speedUpMyMac/trash`, not `~/.trash`
 - Use `speedUpMyMac -0` to finalize those operations.
 - DeskTop clean-up moves all DeskTop items to ~/Documents/DeskDrawer/Desktop/*date*
@@ -60,7 +60,10 @@ speedUpMyMac -a
 - Empty Mac Trash (moves it to same trash dir as all else in this program)
 - Move contents in Downloads to dated folder in DeskDrawer to be optionally cleaned out, deleted later
 - Reduce desktop clutter 
-- Empty caches (also removes lots of browsing data)
+- Empty Library caches (also removes lots of browsing data)
+	- Some people recommend this.
+	- Others say it will actually slow the computer down, although that may be temporary.
+	- It is safe, so you can try it, but you can also opt out.
 - Free up RAM
 - Reindex spotlight
 - Identify directories with large files
