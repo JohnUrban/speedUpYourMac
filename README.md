@@ -11,7 +11,7 @@ Overall, to speed up your Mac, you can:
 - Use activity monitor (or Terminal) to find and kill memory-hungry and/or CPU-intensive processes
 - Remove start-up programs in System Preferences --> Users & Groups --> Login Items
 - Turn off viz fx @ System Preferences > Dock (uncheck "Animate opening applications", "Automatically hide", "Show the Dock")
-- Delete browser add-ons / extensions you dont want, need, or use (E.g. Chrome Preferences --> Extensions )
+- Delete browser add-ons / extensions you dont want, need, or use (E.g. Chrome Preferences --> Extensions)
 	- Also: Clear all your browsing data (e.g. Chrome Preferences --> Clear browsing data ; check all from all time)
 - Reindex spotlight: System Preferences > Spotlight --> Privacy --> "+" --> add your HD --> then remove it with "-"
 	- Or terminal: `sudo mdutil -E /`
