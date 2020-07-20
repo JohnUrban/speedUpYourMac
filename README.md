@@ -1,4 +1,4 @@
-# speedUpYourMac
+# speedUpYourMac - version 1.0
 Lessons and scripts to clean up and speed up your Mac OS. Nothing new to see here, but useful.
 
 These scripts only do a subset of things you can do to improve your aging Mac's performance. See the following link for more help:
@@ -15,6 +15,10 @@ Overall, to speed up your Mac, you can:
 	- Also: Clear all your browsing data (e.g. Chrome Preferences --> Clear browsing data ; check all from all time)
 - Reindex spotlight: System Preferences > Spotlight --> Privacy --> "+" --> add your HD --> then remove it with "-"
 	- Or terminal: `sudo mdutil -E /`
+- Limit spotlight indexing: if you have an external hard drive that is always attached, Spotlight may be trying to index it all the time, which can be resource-heavy and slow.
+	- This was completely unnecessary for me when the connected hard drive was just a CarbonCopyCloner clone back up of my Mac.
+	- Just add that to list of things Spotlight shouldn't search.
+	- System Preferences > Spotlight --> Privacy --> "+" --> add your HD --> then remove it with "-"
 - Reduce desktop clutter 
 - Empty caches 
 - Uninstall unused Apps 
@@ -31,7 +35,7 @@ Overall, to speed up your Mac, you can:
 # What can be done by speedUpYourMac
 
 - Speed up Terminal by cleaning out files that slow it down
-- Empty Mac Trash
+- Empty Mac Trash (moves it to same trash dir as all else in this program)
 - Move contents in Downloads to dated folder in DeskDrawer to be optionally cleaned out, deleted later
 - Reduce desktop clutter 
 - Empty caches (also removes lots of browsing data)
@@ -76,6 +80,34 @@ Overall, to speed up your Mac, you can:
 - DeskTop clean-up moves all DeskTop items to ~/Documents/DeskDrawer/Desktop/*date*
 - Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
 
+
+
+
+
+# Usage:
+
+	speedUpMyMac -1234567adlvh
+
+        -1 speed up terminal : move ASL and plist files to DeskDrawer trash (dated)
+	-2 declutter mac Desktop : move Mac Desktop contents to DeskDrawer (dated)
+	-3 declutter mac Downloads : move Mac downloads to DeskDrawer (dated)
+	-4 declutter mac trash : move Mac trash contents to DeskDrawer trash (dated)
+	-5 declutter Caches :  move Mac Caches contents to DeskDrawer trash (dated)
+	-6 Free up RAM
+	-7 Reindex Spotlight
+	-a All / Auto : Run all previous steps.
+	-d Get disk space used by current directory.
+	-l Loop over sub-directories in current directory, and get disk space used by each.
+	-v View DeskDrawer in Finder
+
+
+
+
+
+
+
+
+## Deeper Explanations of each script
 
 # Speed up Terminal
 
