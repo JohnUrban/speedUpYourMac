@@ -3,7 +3,7 @@ Lessons and scripts to clean up and speed up your Mac OS. Nothing new to see her
 
 # Scripts
 
-- speedUpMyMac 
+- `speedUpMyMac`
 - - wraps over all other scripts
 - - other scripts can be used directly or accessed by `speedUpMyMac scriptname`
 
@@ -11,9 +11,9 @@ Lessons and scripts to clean up and speed up your Mac OS. Nothing new to see her
 
 # General Notes:
 
-- All wrap-over scripts that move files to trash, move it to ~/.speedUpYourMac/trash , not ~/.trash
-- Use "speedUpMyMac emptytrash" to finalize those operations.
-- Use "speedUpMyMac auto" to do all steps (including emptying trash) in one step.
+- All wrap-over scripts that move files to trash, move it to `~/.speedUpYourMac/trash`, not `~/.trash`
+- Use `speedUpMyMac emptytrash` to finalize those operations.
+- Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
 
 
 # Speed up Terminal
@@ -32,15 +32,18 @@ Problems:
 
 Solutions:
 
-- Move .asl files located in /private/var/log/asl/ to trash
+- Move .asl files located in `/private/var/log/asl/` to trash
 - Move Terminal plist file to trash
 - Empty trash when you feel comfortable.
 
+```
 sudo mv /private/var/log/asl/*asl ~/.trash/
 
 mv /Users/___USERNAME___/Library/Preferences/com.apple.Terminal.plist ~/.trash/
+```
 
 OR use the wrap-over here:
 
+```
 speedUpMyTerminal
-
+```
