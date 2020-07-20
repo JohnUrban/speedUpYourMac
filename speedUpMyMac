@@ -8,6 +8,7 @@ function help {
     echo "
 
         Usage: ${0} -1234567adlvh
+
         -1 speed up terminal : move ASL and plist files to DeskDrawer trash (dated)
 	-2 declutter mac Desktop : move Mac Desktop contents to DeskDrawer (dated)
 	-3 declutter mac Downloads : move Mac downloads to DeskDrawer (dated)
@@ -19,6 +20,7 @@ function help {
 	-d Get disk space used by current directory.
 	-l Loop over sub-directories in current directory, and get disk space used by each.
 	-v View DeskDrawer in Finder
+
 "
 }
 
@@ -40,6 +42,7 @@ export PATH=${MAIN}:${BIN}:${PATH}
 ##############################################################################
 ## DEFAULTS
 ##############################################################################
+HELP=false
 RUNTM=false # Terminal speed up
 RUNDT=false # Desktop clean
 RUNDN=false # Downloads clean
@@ -75,6 +78,13 @@ while getopts "1234567adlvh" arg; do
 done
 
 
+
+##############################################################################
+## DEBUG CODE
+##############################################################################
+# for VAR in RUNTM RUNDT RUNDN RUNMT RUNCS RUNRM RUNSL RUNTM RUNDU RUNDL RUNVW RUN00 HELP ; do echo ${VAR} ${!VAR} ; done
+
+
 ##############################################################################
 ## TRIGGER HELP IF OPTED FOR
 ##############################################################################
@@ -94,17 +104,6 @@ if ${HELP}; then help; exit; fi
 ##############################################################################
 ## RUN PIPELINE
 ##############################################################################
-
-RUNTM=false
-RUNDT=false
-RUNDN=false
-RUNMT=false
-RUNCS=false
-RUNRM=false
-RUNSL=false
-RUNDU=false
-RUNDL=false
-RUNVW=false
 
 if $RUNTM ; then speedUpMyTerminal ; fi
 if $RUNDT ; then declutterMyDesktop ; fi
