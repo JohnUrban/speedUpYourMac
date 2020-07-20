@@ -88,7 +88,7 @@ Overall, to speed up your Mac, you can:
 
 	speedUpMyMac -1234567adlvh
 
-        -1 speed up terminal : move ASL and plist files to DeskDrawer trash (dated)
+	-1 speed up terminal : move ASL and plist files to DeskDrawer trash (dated)
 	-2 declutter mac Desktop : move Mac Desktop contents to DeskDrawer (dated)
 	-3 declutter mac Downloads : move Mac downloads to DeskDrawer (dated)
 	-4 declutter mac trash : move Mac trash contents to DeskDrawer trash (dated)
