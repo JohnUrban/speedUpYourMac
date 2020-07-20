@@ -14,9 +14,9 @@ echo "[[::: speedUpMyMac ::: Cleaning ${DT} :::]] = Started."
 
 if $( bash ${MAIN}/dirIsCluttered ${DT} ) ; then 
   echo "[[::: speedUpMyMac ::: Cleaning ${DT} :::]] = Clutter found."
-  NEWDT=~/Documents/DeskDrawer/speedUpMyMac/${DT}/${DATE}
+  NEWDT=~/Documents/DeskDrawer/speedUpMyMac/${BASE}/${DATE}
   mkdir -p ${NEWDT}
-  mv ${DT}/* ${NEWDT}/
+  sudo mv ${DT}/* ${NEWDT}/
   echo "[[::: speedUpMyMac ::: Cleaning ${DT} :::]] = Clutter moved to ${NEWDT} ."
 else
   echo "[[::: speedUpMyMac ::: Cleaning ${DT} :::]] = No clutter found."

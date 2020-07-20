@@ -1,4 +1,5 @@
 #!/bin/bash
 ## Usage: scriptname directory-or-file-name
 
+echo
 for d in *; do if [ -d $d ]; then cd $d; echo $d; diskUsageThisDirAndAllSubDir ; cd ../; echo ; fi; done

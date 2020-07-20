@@ -3,7 +3,7 @@
 
 ## VARS
 DATE=$( date "+%Y-%m-%d-%H-%M-%S" )
-NEWTRASH=~/Documents/DeskDrawer/speedUpMyMac/trash/${DATE}/Caches
+NEWTRASH=~/Documents/DeskDrawer/speedUpMyMac/trash/Caches/${DATE}
 
 
 ## EXECUTE

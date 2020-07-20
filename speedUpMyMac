@@ -16,7 +16,7 @@ function help {
 	-5 declutter Caches :  move Mac Caches contents to DeskDrawer trash (dated)
 	-6 Free up RAM
 	-7 Reindex Spotlight
-	-a All / Auto : Run all previous steps.
+	-a All / Auto : Run all previous steps except Spotlight Reindexing (left out to ensure it is only executed purposely).
 	-d Get disk space used by current directory.
 	-l Loop over sub-directories in current directory, and get disk space used by each.
 	-v View DeskDrawer in Finder
@@ -67,7 +67,7 @@ while getopts "1234567adlvh" arg; do
 	5) RUNCS=true ;;
 	6) RUNRM=true ;;
 	7) RUNSL=true ;;
-	a) RUNTM=true ; RUNDT=true ; RUNDN=true ; RUNMT=true ; RUNCS=true ; RUNRM=true ; RUNSL=true ; RUNVW=true ; RUNDL=true ;;
+	a) RUNTM=true ; RUNDT=true ; RUNDN=true ; RUNMT=true ; RUNCS=true ; RUNRM=true ; RUNSL=false ; RUNVW=true ; RUNDL=true ;;
 	d) RUNDU=true ;;
 	l) RUNDL=true ;;
 	v) RUNVW=true ;;
