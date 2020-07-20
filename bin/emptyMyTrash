@@ -18,7 +18,12 @@ fi
 if $TRASH_EXISTS ; then
   echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = Trash found."
   cd ${NEWTRASH}
-  rm -rf *
+  ######################################## 
+  ##### I am hard-coding expected dir names to avoid calamities (e.g. sudo rm -rf / ) -- dare I even write that in a commented out line?!?!?! Add more hashtags!!!!
+  ########################################
+  if [ -d mactrash ]; then sudo rm -rf mactrash ; fi
+  if [ -d Terminal ]; then rm -rf Terminal ; fi
+  if [ -d Caches ]; then rm -rf Caches ; fi
 else
   echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = No trash found."
 fi
