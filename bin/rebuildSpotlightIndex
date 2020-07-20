@@ -1,13 +1,13 @@
 #!/bin/bash
 
 
-echo "	[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Started."
+echo "[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Started."
 
-echo "	[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Launching background process."
+echo "[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Launching background process."
 
 sudo mdutil -E /
 
-echo "	[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Launched!"
-echo "	[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Allow it a few to several hours."
-echo "	[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Expect to see mdworker and other high mem/high cpu processes in Acivity Monitor."
+echo "[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Launched!"
+echo "[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Allow it a few to several hours."
+echo "[[::: speedUpMyMac ::: Rebuild Spotlight Index :::]] = Expect to see mdworker and other high mem/high cpu processes in Acivity Monitor."
 

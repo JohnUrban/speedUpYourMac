@@ -1,0 +1,29 @@
+#!/bin/bash
+
+
+## VARS
+NEWTRASH=~/Documents/DeskDrawer/speedUpMyMac/trash/
+
+
+## EXECUTE
+
+echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = Started."
+
+TRASH_EXISTS=false
+
+if [ -d ${NEWTRASH} ] ; then
+  TRASH_EXISTS=$( bash ${MAIN}/dirIsCluttered ${NEWTRASH} )
+fi
+
+if $TRASH_EXISTS ; then
+  echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = Trash found."
+  cd ${NEWTRASH}
+  rm -r *
+else
+  echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = No trash found."
+fi
+
+echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = Done!"
+
+
+

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MAIN=$( dirname $0 )
+DT=~/.trash
+BASE=trash/mactrash
+
+## EXECUTE
+
+${MAIN}/moveToDeskDrawer ${DT} ${BASE}
+

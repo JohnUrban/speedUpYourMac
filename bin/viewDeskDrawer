@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+
+echo "[[::: speedUpMyMac ::: Opening up DeskDrawer in Finder :::]] = Started."
+DOCS=~/Documents/
+DD=${DOCS}/DeskDrawer
+DDSUMM=${DD}/speedUpMyMac
+DIRS="$DDSUM $DD"
+
+for D in $DIRS; do
+ if [ -d $D ]; then
+   open $D
+   echo "[[::: speedUpMyMac ::: Opening up DeskDrawer in Finder :::]] = Found and opened. "
+   echo "[[::: speedUpMyMac ::: Opening up DeskDrawer in Finder :::]] = Done! "
+   exit
+ fi
+done
+
+echo "[[::: speedUpMyMac ::: Opening up DeskDrawer in Finder :::]] = DeskDrawer not found...."
+echo "[[::: speedUpMyMac ::: Opening up DeskDrawer in Finder :::]] = Done!"

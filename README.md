@@ -57,6 +57,10 @@ Overall, to speed up your Mac, you can:
 - `rebuildSpotlightIndex`
 - `diskUsageThisDirAndAllSubDir`
 - `diskUsageThisDirAndAllSubDirLoop`
+- `declutterMacDownloads`
+- `declutterMacTrash`
+- `emptyMyTrash`
+- `viewDeskDrawer`
 
 # Helper scripts
 

@@ -4,8 +4,8 @@ DIR=$1
 
 
 if [ ! -z "$(ls -A ${DIR} )" ]; then
-   echo True
+   echo true
 else
-   echo False
+   echo false
 fi
 

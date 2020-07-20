@@ -1,6 +1,6 @@
 #!/bin/bash
 
 
-echo "	[[::: speedUpMyMac ::: Cleaning RAM :::]] = Started."
+echo "[[::: speedUpMyMac ::: Cleaning RAM :::]] = Started."
 sudo purge
-echo "	[[::: speedUpMyMac ::: Cleaning RAM :::]] = Done!"
+echo "[[::: speedUpMyMac ::: Cleaning RAM :::]] = Done!"
