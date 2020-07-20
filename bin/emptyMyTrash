@@ -3,7 +3,7 @@
 
 ## VARS
 NEWTRASH=~/Documents/DeskDrawer/speedUpMyMac/trash/
-
+MAIN=$( dirname $0 )
 
 ## EXECUTE
 
@@ -18,7 +18,7 @@ fi
 if $TRASH_EXISTS ; then
   echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = Trash found."
   cd ${NEWTRASH}
-  rm -r *
+  rm -rf *
 else
   echo "[[::: speedUpMyMac ::: Emptying Trash :::]] = No trash found."
 fi

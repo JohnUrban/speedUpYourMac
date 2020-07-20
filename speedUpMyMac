@@ -7,7 +7,7 @@
 function help {
     echo "
 
-        Usage: ${0} -1234567adlvh
+        Usage: ${0} -1234567adlv0h
 
         -1 speed up terminal : move ASL and plist files to DeskDrawer trash (dated)
 	-2 declutter mac Desktop : move Mac Desktop contents to DeskDrawer (dated)
@@ -20,6 +20,7 @@ function help {
 	-d Get disk space used by current directory.
 	-l Loop over sub-directories in current directory, and get disk space used by each.
 	-v View DeskDrawer in Finder
+	-0 Empty out DeskDrawer Trash contents. This is permanent. This does not affect DeskTop or Downoads in DeskDrawer.
 
 "
 }
@@ -58,7 +59,7 @@ RUN00=false # Empty DeskDrawer Trash
 ##############################################################################
 ## GET OPTS
 ##############################################################################
-while getopts "1234567adlvh" arg; do
+while getopts "1234567adlv0h" arg; do
     case $arg in
 	1) RUNTM=true ;;
 	2) RUNDT=true ;;
