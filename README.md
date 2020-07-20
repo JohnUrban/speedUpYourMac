@@ -1,6 +1,83 @@
 # speedUpYourMac - version 1.0
 Lessons and scripts to clean up and speed up your Mac OS. Nothing new to see here, but useful.
 
+# Usage:
+
+	speedUpMyMac -1234567adlvh
+
+	-1 speed up terminal : move ASL and plist files to DeskDrawer trash (dated)
+	-2 declutter mac Desktop : move Mac Desktop contents to DeskDrawer (dated)
+	-3 declutter mac Downloads : move Mac downloads to DeskDrawer (dated)
+	-4 declutter mac trash : move Mac trash contents to DeskDrawer trash (dated)
+	-5 declutter Caches :  move Mac Caches contents to DeskDrawer trash (dated)
+	-6 Free up RAM
+	-7 Reindex Spotlight
+	-a All / Auto : Run all previous steps.
+	-d Get disk space used by current directory.
+	-l Loop over sub-directories in current directory, and get disk space used by each.
+	-v View DeskDrawer in Finder
+
+
+
+
+# General Notes:
+
+- All wrap-over scripts that move files to trash, move it to `~/Documents/DeskDrawer/speedUpMyMac/trash`, not `~/.trash`
+- Use `speedUpMyMac emptytrash` to finalize those operations.
+- DeskTop clean-up moves all DeskTop items to ~/Documents/DeskDrawer/Desktop/*date*
+- Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
+
+
+
+
+# What can be done by speedUpYourMac ?
+
+- Speed up Terminal by cleaning out files that slow it down
+- Empty Mac Trash (moves it to same trash dir as all else in this program)
+- Move contents in Downloads to dated folder in DeskDrawer to be optionally cleaned out, deleted later
+- Reduce desktop clutter 
+- Empty caches (also removes lots of browsing data)
+- Free up RAM
+- Reindex spotlight
+- Identify directories with large files
+
+
+
+# Scripts
+
+- `speedUpMyMac`
+	- wraps over all other scripts
+	- other scripts can be used directly or accessed by `speedUpMyMac scriptname`
+	- Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
+- `speedUpMyTerminal`
+- `freeUpMyRAM`
+- `cleanUpMyCaches`
+- `declutterMyDesktop`
+- `rebuildSpotlightIndex`
+- `diskUsageThisDirAndAllSubDir`
+- `diskUsageThisDirAndAllSubDirLoop`
+- `declutterMacDownloads`
+- `declutterMacTrash`
+- `emptyMyTrash`
+- `viewDeskDrawer`
+
+# Helper scripts
+
+- `dirIsCluttered`
+- `dirIsEmpty`
+- `moveToDeskDrawer`
+
+# Possible future helpers:
+
+- Help remove Apps entirely by finding associated files (not just the App in the Applications folder)
+- Help compress files (gzip) and directory structures into zips, or gzipped tarballs
+
+
+
+
+
+# What can be done to speed up your Mac more generally ?
+
 These scripts only do a subset of things you can do to improve your aging Mac's performance. See the following link for more help:
 - https://macpaw.com/how-to/speed-up-mac
 
@@ -30,77 +107,6 @@ Overall, to speed up your Mac, you can:
 - Reset SMC (turn off, hold Shift+Control+Option+PowerButton for 10 sec, disconnect battery if possible, hold power button for 5 seconds, reconnect battery, turn on or reset PRAM as below )
 - Reset PRAM (turn off, press power button and immediately hold cmd+opt+P+R, continue holding as computer starts, eventually release keys, may hear a chime)
 - Replace hard drive with solid state drive
-
-
-# What can be done by speedUpYourMac
-
-- Speed up Terminal by cleaning out files that slow it down
-- Empty Mac Trash (moves it to same trash dir as all else in this program)
-- Move contents in Downloads to dated folder in DeskDrawer to be optionally cleaned out, deleted later
-- Reduce desktop clutter 
-- Empty caches (also removes lots of browsing data)
-- Free up RAM
-- Reindex spotlight
-- Identify directories with large files
-
-# Possible future helpers:
-- Help remove Apps entirely by finding associated files (not just the App in the Applications folder)
-- Help compress files (gzip) and directory structures into zips, or gzipped tarballs
-
-
-# Scripts
-
-- `speedUpMyMac`
-	- wraps over all other scripts
-	- other scripts can be used directly or accessed by `speedUpMyMac scriptname`
-	- Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
-- `speedUpMyTerminal`
-- `freeUpMyRAM`
-- `cleanUpMyCaches`
-- `declutterMyDesktop`
-- `rebuildSpotlightIndex`
-- `diskUsageThisDirAndAllSubDir`
-- `diskUsageThisDirAndAllSubDirLoop`
-- `declutterMacDownloads`
-- `declutterMacTrash`
-- `emptyMyTrash`
-- `viewDeskDrawer`
-
-# Helper scripts
-
-- `dirIsCluttered`
-- `dirIsEmpty`
-- `moveToDeskDrawer`
-
-
-# General Notes:
-
-- All wrap-over scripts that move files to trash, move it to `~/Documents/DeskDrawer/speedUpMyMac/trash`, not `~/.trash`
-- Use `speedUpMyMac emptytrash` to finalize those operations.
-- DeskTop clean-up moves all DeskTop items to ~/Documents/DeskDrawer/Desktop/*date*
-- Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
-
-
-
-
-
-# Usage:
-
-	speedUpMyMac -1234567adlvh
-
-	-1 speed up terminal : move ASL and plist files to DeskDrawer trash (dated)
-	-2 declutter mac Desktop : move Mac Desktop contents to DeskDrawer (dated)
-	-3 declutter mac Downloads : move Mac downloads to DeskDrawer (dated)
-	-4 declutter mac trash : move Mac trash contents to DeskDrawer trash (dated)
-	-5 declutter Caches :  move Mac Caches contents to DeskDrawer trash (dated)
-	-6 Free up RAM
-	-7 Reindex Spotlight
-	-a All / Auto : Run all previous steps.
-	-d Get disk space used by current directory.
-	-l Loop over sub-directories in current directory, and get disk space used by each.
-	-v View DeskDrawer in Finder
-
-
 
 
 
