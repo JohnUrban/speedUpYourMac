@@ -5,7 +5,7 @@ Lessons and scripts to clean up and speed up your Mac OS. Nothing new to see her
 
 - speedUpMyMac 
 -- wraps over all other scripts
--- other scripts can be used directly or accessed by "speedUpMyMac scriptname"
+-- other scripts can be used directly or accessed by `speedUpMyMac scriptname`
 
 
 
