@@ -18,14 +18,38 @@ Lessons and scripts to clean up and speed up your Mac OS. Nothing new to see her
 	-v View DeskDrawer in Finder
 
 
+# Quick install :
+
+```
+git clone https://github.com/JohnUrban/speedUpYourMac.git
+cd speedUpYourMac
+export PATH=${PWD}:${PATH}
+```
+
+It should not be necessary to change permissions, but if needed:
+```
+chmod u+x speedUpMyMac
+chmod u+x bin/*
+```
+
+
+# Quick Start :
+
+For the impatient and brave:
+
+```
+speedUpMyMac -a
+```
 
 
 # General Notes:
 
+- Use `speedUpMyMac auto` to do all steps (except emptying trash) in one step.
 - All wrap-over scripts that move files to trash, move it to `~/Documents/DeskDrawer/speedUpMyMac/trash`, not `~/.trash`
-- Use `speedUpMyMac emptytrash` to finalize those operations.
+- Use `speedUpMyMac -0` to finalize those operations.
 - DeskTop clean-up moves all DeskTop items to ~/Documents/DeskDrawer/Desktop/*date*
-- Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
+- Downloads clean-up moves all Downloads items to ~/Documents/DeskDrawer/Downloads/*date*
+- Mac Trash clean-up moves all Mac Trash items to ~/Documents/DeskDrawer/trash/mactrash/*date*
 
 
 
