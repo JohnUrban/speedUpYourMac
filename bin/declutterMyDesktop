@@ -1,0 +1,10 @@
+#!/bin/bash
+
+MAIN=$( dirname $0 )
+DT=~/Destop
+
+
+## EXECUTE
+
+${MAIN}/moveToDeskDrawer ${DT}
+

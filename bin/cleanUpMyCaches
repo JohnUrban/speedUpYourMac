@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+## VARS
+DATE=$( date "+%Y-%m-%d-%H-%M-%S" )
+NEWTRASH=~/Documents/DeskDrawer/speedUpMyMac/trash/${DATE}/Caches
+
+
+## EXECUTE
+
+echo "	[[::: speedUpMyMac ::: Cleaning Caches :::]] = Started."
+
+mkdir -p ${NEWTRASH}
+sudo mv ~/Library/Caches/* ${NEWTRASH}/
+
+echo "	[[::: speedUpMyMac ::: Cleaning Caches :::]] = Moved to ${NEWTRASH} ."
+echo "	[[::: speedUpMyMac ::: Cleaning Caches :::]] = Done!"
+echo "	[[::: speedUpMyMac ::: Cleaning Caches :::]] = NOTE: Not yet permanently removed."
+
+
+

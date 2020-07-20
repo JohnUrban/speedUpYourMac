@@ -1,0 +1,28 @@
+#!/bin/bash
+
+## CMD ARG VARS
+DT=${1}
+
+# OTHER VARS
+DATE=$( date "+%Y-%m-%d-%H-%M-%S" )
+MAIN=$( dirname $0 )
+BASE=$( basename $DT )
+
+echo "	[[::: speedUpMyMac ::: Cleaning ${DT} :::]] = Started."
+
+
+if $( bash ${MAIN}/dirIsCluttered ${DT} ) ; then 
+  echo "  [[::: speedUpMyMac ::: Cleaning ${DT} :::]] = Clutter found."
+  NEWDT=~/Documents/DeskDrawer/speedUpMyMac/${DT}/${DATE}
+  mkdir -p ${NEWDT}
+  mv ${DT}/* ${NEWDT}/
+  echo "  [[::: speedUpMyMac ::: Cleaning ${DT} :::]] = Clutter moved to ${NEWDT} ."
+else
+  echo "  [[::: speedUpMyMac ::: Cleaning ${DT} :::]] = No clutter found."
+fi
+
+
+
+echo "	[[::: speedUpMyMac ::: Cleaning ${DT} :::]] = Done!"
+
+

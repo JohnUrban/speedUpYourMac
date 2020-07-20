@@ -1,0 +1,19 @@
+#!/bin/bash
+
+## VARS
+DATE=$( date "+%Y-%m-%d-%H-%M-%S" )
+NEWTRASH=~/Documents/DeskDrawer/speedUpMyMac/trash/${DATE}/Terminal
+
+
+
+## EXECUTE 
+echo "	[[::: speedUpMyMac ::: Cleaning Terminal :::]] = Started."
+
+mkdir -p ${NEWTRASH}
+sudo mv /private/var/log/asl/*asl ${NEWTRASH}/
+sudo mv ~/Library/Preferences/com.apple.Terminal.plist ${NEWTRASH}/
+
+echo "	[[::: speedUpMyMac ::: Cleaning Terminal :::]] = Moved to ${NEWTRASH} . "
+echo "	[[::: speedUpMyMac ::: Cleaning Terminal :::]] = Done!"
+
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+## Usage: scriptname directory-or-file-name
+
+du -skh $1

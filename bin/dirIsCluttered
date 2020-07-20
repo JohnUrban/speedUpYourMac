@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DIR=$1
+
+
+if [ ! -z "$(ls -A ${DIR} )" ]; then
+   echo True
+else
+   echo False
+fi
+
