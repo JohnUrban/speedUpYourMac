@@ -47,13 +47,14 @@ Overall, to speed up your Mac, you can:
 # Scripts
 
 - `speedUpMyMac`
-- - wraps over all other scripts
-- - other scripts can be used directly or accessed by `speedUpMyMac scriptname`
-- - Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
+	- wraps over all other scripts
+	- other scripts can be used directly or accessed by `speedUpMyMac scriptname`
+	- Use `speedUpMyMac auto` to do all steps (including emptying trash) in one step.
 - `speedUpMyTerminal`
 - `freeUpMyRAM`
 - `cleanUpMyCaches`
 - `declutterMyDesktop`
+- `rebuildSpotlightIndex`
 - `diskUsageThisDirAndAllSubDir`
 - `diskUsageThisDirAndAllSubDirLoop`
 
