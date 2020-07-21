@@ -110,8 +110,10 @@ These scripts only do a subset of things you can do to improve your aging Mac's 
 
 Overall, to speed up your Mac, you can:
 - Shut down programs/Apps you're not using (e.g. don't infinitely keep Word open)
+- Reduce desktop clutter 
 - Empty trash (rm -r ~/.trash/* )
 - Empty Downloads (rm -r ~/Downloads/* ) --  move important stuff out of it first.
+- Empty caches 
 - Use activity monitor (or Terminal) to find and kill memory-hungry and/or CPU-intensive processes
 - Remove start-up programs in System Preferences --> Users & Groups --> Login Items
 - Turn off viz fx @ System Preferences > Dock (uncheck "Animate opening applications", "Automatically hide", "Show the Dock")
@@ -123,11 +125,10 @@ Overall, to speed up your Mac, you can:
 	- This was completely unnecessary for me when the connected hard drive was just a CarbonCopyCloner clone back up of my Mac.
 	- Just add that to list of things Spotlight shouldn't search.
 	- System Preferences > Spotlight --> Privacy --> "+" --> add your HD --> then remove it with "-"
-- Reduce desktop clutter 
-- Empty caches 
-- Uninstall unused Apps 
+- Uninstall unused Apps (see below for more details)
 - Clean up HD/SSD storage drive (Caches, logs, apps, widgets, hidden trash, large and old files)
 	- Move large unused files (movies, music, etc) to an external storage drive
+	- Compress rarely used large files and/or directories into gzipped tarballs.
 - Update Mac OS software (or hardware if have money to do so)
 - Try creating a new profile and using that to "start over" since it won't have tons of unfound clutter, caches, logs, etc.
 - Free up RAM (sudo purge, memory clean app, or this script)
