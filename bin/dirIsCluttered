@@ -3,7 +3,11 @@
 DIR=$1
 
 
-if [ ! -z "$(ls -A ${DIR} )" ]; then
+#if [ ! -z "$(ls -A ${DIR} )" ]; then
+
+CNT=$( ls ${DIR} | wc -l )
+
+if [ $CNT -gt 0 ]; then
    echo true
 else
    echo false
