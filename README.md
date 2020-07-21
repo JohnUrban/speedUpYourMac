@@ -135,9 +135,45 @@ Overall, to speed up your Mac, you can:
 - Reset PRAM (turn off, press power button and immediately hold cmd+opt+P+R, continue holding as computer starts, eventually release keys, may hear a chime)
 - Replace hard drive with solid state drive
 
-
-
-
+# Uninstalling programs
+- Kill all App-related processes in Activity Monitor
+- Move App in to trash
+	- Drag icon from Finder Applications folder to Trash
+	- Or delete App.app in /Applications/
+- Remove localized baggage from the program
+	- Go through each folder in ~/Library to identify where the App left its feces, and clean it out
+	- Examples:
+	- ~/Library/Application\ Scripts/
+	- ~/Library/Application\ Support/
+	- ~/Library/Caches 
+	- ~/Library/Containers/
+	- ~/Library/Cookies/
+	- ~/Library/Group\ Conainters/
+	- ~/Library/Launch\ Agents/
+	- ~/Library/Logs/
+	- ~/Library/Preferences
+	- ~/Library/SyncedPreferences/
+	- ~/Library/WebKit
+- Remove global baggage left by the program
+	- Examples (3rd party, non-apple/non-system apps can be deleted. Be careful though.)
+	- /Library/Application\ Support/ 
+	- /Library/Launch\ Agents/ 
+	- /Library/Launch\ Daemons/
+	- /Library/Logs/
+	- /Library/Preferences/
+	- /Library/PrivilegedHelperTools/
+	- /Library/Receipts/
+	- /Library/ScriptingAdditions/
+	- /Library/StartupItems/
+- Perform cmd+spacebar Spotlight search for any leftover program files
+- Hidden files and kernel extensions may still be a problem
+	- In termal, make sure to do `ls -a`.
+	- In finder, make sure to do cmd+shift+dot(.) to show hidden files (and to reverse it).
+	- Kernel extensions are found in /System/Library/Extensions and end with the extension .kext
+		- However, deleting them may be dangerous. 
+		- Research it first.
+		- Clone your HD/SSD to another one using CCC.
+		- Then delete.
 
 
 ## Deeper Explanations of each script
