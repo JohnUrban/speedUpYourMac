@@ -6,7 +6,7 @@ echo "[[::: speedUpMyMac ::: Opening up DeskDrawer in Finder :::]] = Started."
 DOCS=~/Documents/
 DD=${DOCS}/DeskDrawer
 DDSUMM=${DD}/speedUpMyMac
-DIRS="$DDSUM $DD"
+DIRS="$DDSUMM $DD"
 
 for D in $DIRS; do
  if [ -d $D ]; then
