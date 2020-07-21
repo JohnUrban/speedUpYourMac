@@ -136,7 +136,7 @@ Overall, to speed up your Mac, you can:
 - Reset PRAM (turn off, press power button and immediately hold cmd+opt+P+R, continue holding as computer starts, eventually release keys, may hear a chime)
 - Replace hard drive with solid state drive
 
-# Uninstalling programs
+# Uninstalling programs/Apps on Macs
 - Kill all App-related processes in Activity Monitor
 - Move App in to trash
 	- Drag icon from Finder Applications folder to Trash
